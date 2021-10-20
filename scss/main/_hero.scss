@@ -1,0 +1,80 @@
+
+.hero__wrap {
+  margin-top: 50px;
+}
+
+.hero__list {
+  margin-left: 0px;
+}
+
+.hero__item {
+  border-bottom: 2px solid $color-light-gray;
+
+  button {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-light-gray;
+    background: none;
+    border: none;
+    transition: $transition-two-sec;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &--active {
+    border-color: $primary-color;
+
+    button {
+      color: $primary-color;
+    }
+  }
+
+  &:hover {
+    border-color: $primary-color;
+    transition: $transition-two-sec;
+  }
+
+}
+
+.hero__title {
+  margin: 26px 0;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  color: $color-dark-gray;
+}
+
+.hero__paragraph {
+  font-family: $font-inter;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: $color-gray;
+}
+
+.hero__buttons {
+  margin-top: 60px;
+
+}
+
+.hero__btn:nth-child(2) {
+  margin-left: 30px;
+}
+
+
+@media (max-width: 1040px) {
+  .hero__title {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .hero__image {
+    margin-top: 50px;
+  }
+}
