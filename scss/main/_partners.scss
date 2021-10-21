@@ -1,0 +1,50 @@
+
+.partners {
+  margin-top: 105px;
+
+  &__title {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: $secondary-color;
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 32px;
+  justify-content: center;
+  align-items: center;
+
+  .company {
+  }
+}
+
+
+@media (max-width: 768px) {
+  .partners__title {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .partners__paragraph {
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+}

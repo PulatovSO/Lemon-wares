@@ -1,0 +1,155 @@
+
+.start {
+  margin-top: 133px;
+}
+
+.start__paragraph {
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.start__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.start__props {
+  margin-top: 57px;
+  margin-bottom: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  span {
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  input {
+    margin: 0 25px;
+  }
+
+  .start__discount {
+    margin-left: 17px;
+    padding: 7px 8px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 9px;
+    background: #ffe87a;
+    border-radius: 8px;
+  }
+}
+
+.start__tariffes {
+  display: flex;
+  justify-content: center;
+
+  .start__tariff {
+    margin-bottom: 85px;
+    width: 425px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    background: none;
+    border: none;
+    border-bottom: 4px solid #c4c4c4;
+    transition: $transition-two-sec;
+
+    &--active {
+      border-color: $primary-color;
+    }
+
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+}
+
+.item {
+  padding: 34px;
+  width: 299px;
+  border: 1.5px solid #C4C4C4;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 25px;
+  }
+
+  &__paragraph {
+    margin-bottom: 28px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 32px;
+  }
+
+  &__price-desc {
+    margin-top: 11px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &__btn {
+    margin: 35px 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__features {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-gray;
+
+    &::before {
+      content: '';
+      margin-right: 15px;
+      display: inline-block;
+      width: 18px;
+      height: 13px;
+      background-image: url(../../img/thick.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .start__title {
+    font-size: 32px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      margin-top: 20px;
+    }
+  }
+}
