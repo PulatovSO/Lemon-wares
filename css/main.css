@@ -632,13 +632,13 @@ a {
   margin-top: 100px;
 }
 
-.cards__card__title {
+.cards__card .card__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
 }
 
-.cards__card__paragraph {
+.cards__card .card__paragraph {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;

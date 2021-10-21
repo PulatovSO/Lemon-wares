@@ -28,13 +28,13 @@
 .cards__card {
   margin-top: 100px;
 
-  &__title {
+  .card__title {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
   }
 
-  &__paragraph {
+  .card__paragraph {
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
