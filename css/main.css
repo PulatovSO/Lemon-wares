@@ -677,6 +677,20 @@ a {
   }
   .hosting__partners {
     margin-top: 20px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .hosting__partners {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */

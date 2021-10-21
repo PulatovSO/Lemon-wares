@@ -71,8 +71,19 @@
   .hosting__title {
     font-size: 35px;
   }
-
+  
   .hosting__partners {
     margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .hosting__partners {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
