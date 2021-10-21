@@ -598,6 +598,30 @@ a {
   }
 }
 
+@media (max-width: 576px) {
+  .hero__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__buttons .btn {
+    margin: 0;
+  }
+  .hero__buttons .btn-light {
+    margin-top: 20px;
+  }
+}
+
 .hosting {
   margin-top: 80px;
 }
